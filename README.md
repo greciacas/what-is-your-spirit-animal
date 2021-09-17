@@ -1,6 +1,6 @@
 # what's your spirit animal
 
-### description here
+A game where you'll discover what animal you resemble to the most. The answers to each questions will determine your results. The start button will lead you to the first question while the next button in each question will lead to the next questions and results. The results page will show you a bar graph that will calculate how many people have gotten each animal. The results page will also lead back to the home page.
 
 ## API and Data Sample
 
@@ -66,18 +66,20 @@
 
 | Component              | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
-|                        |    H     |      hrs       |      hrs      |     hrs     |
-| Home Page              |    H     |      2hrs      |      hrs      |     hrs     |
+|                        |          |                |               |             |
+| Home Page              |    H     |      4hrs      |      hrs      |     hrs     |
+| Start Button           |    H     |      4hrs      |      hrs      |     hrs     |
 | Question 1 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 2 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 3 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 4 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 5 Component   |    H     |      3hrs      |      hrs      |     hrs     |
+| Description Component  |    H     |      5hrs      |      hrs      |     hrs     |
 | Results Component      |    H     |      5hrs      |      hrs      |     hrs     |
 | View Results Component |    H     |      3hrs      |      hrs      |     hrs     |
 | Next Button            |    H     |      5hrs      |      hrs      |     hrs     |
 | CSS                    |    H     |      3hrs      |      hrs      |     hrs     |
 | Media Query            |    H     |      3hrs      |      hrs      |     hrs     |
-| Total                  |    H     |      hrs       |      hrs      |     hrs     |
+| Total                  |    H     |     47hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
