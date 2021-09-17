@@ -37,7 +37,12 @@
 
 ## Wireframes
 
+![](images/windowsmodel.png)
+![](images/phonemodel.png)
+
 ## Component Hierarchy
+
+![](images/hierarchy.png)
 
 ## MVP
 
