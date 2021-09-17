@@ -46,6 +46,11 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ## MVP
 
+-Responsive design
+-Linked pages
+-Functional results
+-Linked and working buttons
+
 ## Post MVP
 
 -Adding a star rating
