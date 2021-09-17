@@ -1,5 +1,7 @@
 # what's your spirit animal
 
+## Project Description
+
 A game where you'll discover what animal you resemble to the most. The answers to each questions will determine your results. The start button will lead you to the first question while the next button in each question will lead to the next questions and results. The results page will show you a bar graph that will calculate how many people have gotten each animal. The results page will also lead back to the home page.
 
 ## API and Data Sample
@@ -33,6 +35,7 @@ A game where you'll discover what animal you resemble to the most. The answers t
             "createdTime": "2021-09-16T21:14:39.000Z"
         }
     ],
+    "offset": "recGE8AKasrAKztq4"
     }
 
 ## Wireframes
@@ -59,10 +62,10 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 | Day             | Deliverable                                            | Status     |
 | --------------- | ------------------------------------------------------ | ---------- |
-| September 16    | Wireframes /Airtable /Project Approval                 | Complete   |
-| September 17    | GET/POST Data/ Creating components/ Linking components | Incomplete |
-| September 18-19 | Working in components                                  | Inomplete  |
-| September 20    | Initial Clickable Model/ Components/ MVP               | Inomplete  |
+| September 16-17 | Wireframes /Airtable /Project Approval                 | Incomplete |
+| September 18    | GET/POST Data/ Creating components/ Linking components | Incomplete |
+| September 19    | Linking components/ Working in components              | Inomplete  |
+| September 20    | Initial Clickable Model/ Working in components/ MVP    | Inomplete  |
 | September 21    | CSS & MVP                                              | Incomplete |
 | September 22-23 | More MVP/ More Styling                                 | Incomplete |
 | September 24    | Presentations                                          | Incomplete |
@@ -78,13 +81,12 @@ A game where you'll discover what animal you resemble to the most. The answers t
 | Question 2 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 3 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 4 Component   |    H     |      3hrs      |      hrs      |     hrs     |
-| Description Component  |    H     |      5hrs      |      hrs      |     hrs     |
 | Results Component      |    H     |      5hrs      |      hrs      |     hrs     |
 | View Results Component |    H     |      3hrs      |      hrs      |     hrs     |
 | Next Buttons           |    H     |      5hrs      |      hrs      |     hrs     |
 | Finish Button          |    H     |      3hrs      |      hrs      |     hrs     |
 | CSS                    |    H     |      3hrs      |      hrs      |     hrs     |
 | Media Query            |    H     |      3hrs      |      hrs      |     hrs     |
-| Total                  |    H     |     47hrs      |      hrs      |     hrs     |
+| Total                  |    H     |     42hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
