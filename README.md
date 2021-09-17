@@ -78,11 +78,11 @@ A game where you'll discover what animal you resemble to the most. The answers t
 | Question 2 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 3 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 4 Component   |    H     |      3hrs      |      hrs      |     hrs     |
-| Question 5 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Description Component  |    H     |      5hrs      |      hrs      |     hrs     |
 | Results Component      |    H     |      5hrs      |      hrs      |     hrs     |
 | View Results Component |    H     |      3hrs      |      hrs      |     hrs     |
-| Next Button            |    H     |      5hrs      |      hrs      |     hrs     |
+| Next Buttons           |    H     |      5hrs      |      hrs      |     hrs     |
+| Finish Button          |    H     |      3hrs      |      hrs      |     hrs     |
 | CSS                    |    H     |      3hrs      |      hrs      |     hrs     |
 | Media Query            |    H     |      3hrs      |      hrs      |     hrs     |
 | Total                  |    H     |     47hrs      |      hrs      |     hrs     |
