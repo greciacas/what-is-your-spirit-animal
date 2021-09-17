@@ -42,8 +42,6 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ## Component Hierarchy
 
-![](images/hierarchy.png)
-
 ## MVP
 
 -Responsive design
