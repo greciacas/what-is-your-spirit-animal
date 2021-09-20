@@ -9,33 +9,42 @@ A game where you'll discover what animal you resemble to the most. The answers t
 ### https://airtable.com/appPmER2y90LOhWkL/tbl3z39YjSrEDjo6t/viwn00wToZavf7zjf?blocks=hide
 
     {
-      "records": [
+    "records": [
+        {
+            "id": "rec1oNxCzV1RHXsuy",
+            "fields": {
+                "animals": "bear",
+                "results": "0"
+            },
+            "createdTime": "2021-09-17T19:08:24.000Z"
+        },
+        {
+            "id": "recGE8AKasrAKztq4",
+            "fields": {
+                "animals": "crab",
+                "results": "0"
+            },
+            "createdTime": "2021-09-16T21:14:39.000Z"
+        },
         {
             "id": "recSl0UmqtRqY2imE",
             "fields": {
-                "results": "0",
-                "animals": "bear"
+                "question4": "How much sleep do you get?",
+                "question1": "Favorite time of the year?",
+                "question3": "It is your free day, how do you spend it?",
+                "question2": "Preferred movie genre?"
             },
             "createdTime": "2021-09-16T21:14:32.000Z"
         },
         {
             "id": "recV9PMtnPBIaQlMs",
             "fields": {
-                "results": "0",
-                "animals": "cat"
-            },
-            "createdTime": "2021-09-16T21:14:39.000Z"
-        },
-        {
-            "id": "recGE8AKasrAKztq4",
-            "fields": {
-                "results": "0",
-                "animals": "crab"
+                "animals": "cat",
+                "results": "0"
             },
             "createdTime": "2021-09-16T21:14:39.000Z"
         }
-    ],
-    "offset": "recGE8AKasrAKztq4"
+    ]
     }
 
 ## Wireframes
@@ -49,14 +58,14 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ## MVP
 
--Responsive design
--Linked pages
--Functional results
--Linked and working buttons
+- Responsive design
+- Linked pages
+- Functional results
+- Linked and working buttons
 
 ## Post MVP
 
--Adding a star rating
+- Adding a star rating
 
 ## Project Schedule
 
