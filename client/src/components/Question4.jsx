@@ -1,6 +1,18 @@
-function Question4() {
+import { Link } from 'react-router-dom';
+
+function Question4(props) {
   return (
-    <h1>How much sleep do you get?</h1>
+    <div>
+        <h1>{props.question} </h1>
+        <button>Option 1</button>
+        <button>Option 2</button>
+        <button>Option 3</button>
+  
+        <Link to='/results'>
+          <button type='button' >FINISH</button>
+        </Link>
+        
+      </div>
   );
 }
 
