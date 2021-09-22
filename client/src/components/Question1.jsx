@@ -6,7 +6,7 @@ import image3 from './images/vacation.png';
 
 const Button1 = styled.button`
     background-image: url(${image1});
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: Times New Roman;
     padding: 80px 70px;
@@ -35,9 +35,9 @@ function Question1(props) {
     <>
     <div>
       <h1>{props.question} </h1>
-      <Button1 onClick={handleClick} >My birthday</Button1>
-      <Button2 onClick={handleClick} >Pay-day</Button2>
-      <Button3 onClick={handleClick} >Vacations!</Button3>
+      <Button1 onClick={handleClick}> <span className='highlight'> My birthday </span> </Button1>
+      <Button2 onClick={handleClick}> <span className='highlight'> Pay-day </span> </Button2>
+      <Button3 onClick={handleClick}> <span className='highlight'> Vacations! </span> </Button3>
     </div>
       
     <div>

@@ -7,6 +7,7 @@ import Question1 from './components/Question1';
 import Question2 from './components/Question2';
 import Question3 from './components/Question3';
 import Question4 from './components/Question4';
+import ResultsPage from './components/ResultsPage';
 
 
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -34,6 +35,7 @@ function App() {
     <div className="App">
       <Route exact path='/' >
         <h1>What's Your Spirit Animal?!</h1>
+        <h3>Let's Find Out..</h3>
         <Link to='/question1'>
           <button type='button' >START</button>
         </Link>
@@ -42,6 +44,7 @@ function App() {
       <Route exact path='/question2'> <Question2 question={questions.second} /> </Route>
       <Route exact path='/question3'> <Question3 question={questions.third} /> </Route>
       <Route exact path='/question4'> <Question4 question={questions.fourth} /> </Route>
+      <Route exact path='/results'> <ResultsPage/> </Route>
     </div>
   );
 }

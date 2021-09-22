@@ -6,10 +6,10 @@ import image3 from './images/sleep.png';
 
 const Button1 = styled.button`
     background-image: url(${image1});
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: Times New Roman;
-    padding: 120px 68px;
+    padding: 118px 66px;
     box-shadow: 0px 5px 7px grey;
     cursor: pointer;
     margin: 30px 10px;
@@ -17,7 +17,7 @@ const Button1 = styled.button`
 
 const Button2 = styled(Button1)`
   background-image: url(${image2});
-  padding: 85px 35px;
+  padding: 85px 33px;
 `;
 
 const Button3 = styled(Button1)`
@@ -35,9 +35,9 @@ function Question4(props) {
     <>
     <div>
       <h1>{props.question} </h1>
-      <Button1 className='option-1' onClick={handleClick} >None. I'm a Programmer</Button1>
-      <Button2 className='option-2' onClick={handleClick} >I Take Naps Here and There</Button2>
-      <Button3 className='option-3' onClick={handleClick} >9hrs, No Less.</Button3>
+      <Button1 className='option-1' onClick={handleClick}> <span className='highlight'>None. I'm a Programmer</span> </Button1>
+      <Button2 className='option-2' onClick={handleClick}> <span className='highlight'>I Take Naps Here and There</span> </Button2>
+      <Button3 className='option-3' onClick={handleClick}> <span className='highlight'>9hrs, No Less.</span> </Button3>
     </div>
         
     <div>

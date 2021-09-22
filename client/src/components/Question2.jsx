@@ -6,7 +6,7 @@ import image3 from './images/reality.png';
 
 const Button1 = styled.button`
     background-image: url(${image1});
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: Times New Roman;
     padding: 90px 30px;
@@ -35,9 +35,9 @@ function Question2(props) {
       <>
       <div>
         <h1>{props.question} </h1>
-        <Button1 className='option-1' onClick={handleClick} >Horror/Thrill</Button1>
-        <Button2 className='option-2' onClick={handleClick} >Comedy/Rom-Com</Button2>
-        <Button3 className='option-3' onClick={handleClick} >I Prefer Reality-TV</Button3>
+        <Button1 className='option-1' onClick={handleClick}> <span className='highlight'>Horror/Thrill</span> </Button1>
+        <Button2 className='option-2' onClick={handleClick}> <span className='highlight'>Comedy/Rom-Com</span> </Button2>
+        <Button3 className='option-3' onClick={handleClick}> <span className='highlight'>I Prefer Reality-TV</span> </Button3>
       </div>
 
       <div>
