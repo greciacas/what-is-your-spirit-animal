@@ -9,25 +9,27 @@ const Button1 = styled.button`
     color: black;
     font-size: 20px;
     font-family: Times New Roman;
-    padding: 118px 66px;
+    font-weight: bold;
+    padding: 118px 58px;
     box-shadow: 0px 5px 7px grey;
     cursor: pointer;
-    margin: 30px 10px;
+    margin: 30px 15px;
   `;
 
 const Button2 = styled(Button1)`
   background-image: url(${image2});
-  padding: 85px 33px;
+  padding: 120px 100px;
 `;
 
 const Button3 = styled(Button1)`
   background-image: url(${image3});
-  padding: 83px 85px;
+  padding: 120px 130px;
 `;
 
 function Question4(props) {
   function handleClick(e) {
     e.preventDefault();
+    props.setSleep(e.target.value);
     console.log('it is working too');
   }
 
@@ -35,14 +37,14 @@ function Question4(props) {
     <>
     <div>
       <h1>{props.question} </h1>
-      <Button1 className='option-1' onClick={handleClick}> <span className='highlight'>None. I'm a Programmer</span> </Button1>
-      <Button2 className='option-2' onClick={handleClick}> <span className='highlight'>I Take Naps Here and There</span> </Button2>
-      <Button3 className='option-3' onClick={handleClick}> <span className='highlight'>9hrs, No Less.</span> </Button3>
+      <Button1 className='optionA' value='none' onClick={handleClick}> <span className='highlight'>None. I'm a Programmer</span> </Button1>
+      <Button2 className='optionB' value='naps' onClick={handleClick}> <span className='highlight'>I Take Naps Here and There</span> </Button2>
+      <Button3 className='optionC' value='always' onClick={handleClick}> <span className='highlight'>9hrs, No Less.</span> </Button3>
     </div>
         
     <div>
       <Link to='/results'>
-        <button type='button' >FINISH</button>
+        <button type='submit' >FINISH</button>
       </Link>
     </div>
 
