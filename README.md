@@ -11,28 +11,12 @@ A game where you'll discover what animal you resemble to the most. The answers t
     {
     "records": [
         {
-            "id": "rec1oNxCzV1RHXsuy",
-            "fields": {
-                "animals": "bear",
-                "results": "0"
-            },
-            "createdTime": "2021-09-17T19:08:24.000Z"
-        },
-        {
-            "id": "recGE8AKasrAKztq4",
-            "fields": {
-                "animals": "crab",
-                "results": "0"
-            },
-            "createdTime": "2021-09-16T21:14:39.000Z"
-        },
-        {
             "id": "recSl0UmqtRqY2imE",
             "fields": {
-                "question4": "How much sleep do you get?",
-                "question1": "Favorite time of the year?",
-                "question3": "It is your free day, how do you spend it?",
-                "question2": "Preferred movie genre?"
+                "fourth": "How much sleep do you get?",
+                "first": "Favorite time of the year?",
+                "third": "It is your free day, how do you spend it?",
+                "second": "Preferred movie genre?"
             },
             "createdTime": "2021-09-16T21:14:32.000Z"
         },
@@ -43,8 +27,17 @@ A game where you'll discover what animal you resemble to the most. The answers t
                 "results": "0"
             },
             "createdTime": "2021-09-16T21:14:39.000Z"
+        },
+        {
+            "id": "recGE8AKasrAKztq4",
+            "fields": {
+                "animals": "crab",
+                "results": "0"
+            },
+            "createdTime": "2021-09-16T21:14:39.000Z"
         }
-    ]
+    ],
+    "offset": "recGE8AKasrAKztq4"
     }
 
 ## Wireframes
@@ -69,15 +62,17 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ## Project Schedule
 
-| Day             | Deliverable                                            | Status     |
-| --------------- | ------------------------------------------------------ | ---------- |
-| September 16-17 | Wireframes /Airtable /Project Approval                 | Incomplete |
-| September 18    | GET/POST Data/ Creating components/ Linking components | Incomplete |
-| September 19    | Linking components/ Working in components              | Inomplete  |
-| September 20    | Initial Clickable Model/ Working in components/ MVP    | Inomplete  |
-| September 21    | CSS & MVP                                              | Incomplete |
-| September 22-23 | More MVP/ More Styling                                 | Incomplete |
-| September 24    | Presentations                                          | Incomplete |
+| Day             | Deliverable                                                  | Status     |
+| --------------- | ------------------------------------------------------------ | ---------- |
+| September 16-17 | Wireframes /Airtable /Project Approval                       | Complete   |
+| September 18    | GET airtable Data/ Creating components/ Linking components   | Complete   |
+| September 19    | Linking components/ Working in components                    | Complete   |
+| September 20    | Initial Clickable Model/ Working in components/ MVP          | Complete   |
+| September 21    | CSS & MVP                                                    | Complete   |
+| September 22-23 | More MVP/ More Styling/ Working with POST Data from airtable | Complete   |
+| September 24    | POST airtable Data/ MVP                                      | Incomplete |
+| September 25-26 |                                                              | Incomplete |
+| September 27    | Presentations                                                | Incomplete |
 
 ## Timeframes
 
@@ -85,15 +80,14 @@ A game where you'll discover what animal you resemble to the most. The answers t
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
 |                        |          |                |               |             |
 | Home Page              |    H     |      4hrs      |      hrs      |     hrs     |
-| Start Button           |    H     |      4hrs      |      hrs      |     hrs     |
 | Question 1 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 2 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 3 Component   |    H     |      3hrs      |      hrs      |     hrs     |
 | Question 4 Component   |    H     |      3hrs      |      hrs      |     hrs     |
+| Options Component      |    H     |      5hrs      |      hrs      |     hrs     |
 | Results Component      |    H     |      5hrs      |      hrs      |     hrs     |
 | View Results Component |    H     |      3hrs      |      hrs      |     hrs     |
-| Next Buttons           |    H     |      5hrs      |      hrs      |     hrs     |
-| Finish Button          |    H     |      3hrs      |      hrs      |     hrs     |
+| All Buttons            |    H     |      5hrs      |      hrs      |     hrs     |
 | CSS                    |    H     |      3hrs      |      hrs      |     hrs     |
 | Media Query            |    H     |      3hrs      |      hrs      |     hrs     |
 | Total                  |    H     |     42hrs      |      hrs      |     hrs     |
