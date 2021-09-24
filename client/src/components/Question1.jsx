@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import image1 from './images/birthday.png';
@@ -30,6 +29,10 @@ const Button3 = styled(Button1)`
 function Question1(props) {
   function handleClick(e) {
     e.preventDefault();
+    const answer = {
+      option: e.target.dataset.option
+    }
+    props.handleAnswer(answer)
     props.setTimeOfYear(e.target.value);
     console.log('it is working');
   }
@@ -38,9 +41,9 @@ function Question1(props) {
     <>
     <div>
       <h1>{props.question}</h1>
-      <Button1 className='optionA' value='birthday' onClick={handleClick}> <span className='highlight'>My birthday</span> </Button1>
-      <Button2 className='optionB' value='payday' onClick={handleClick}> <span className='highlight'>Pay-day</span> </Button2>
-      <Button3 className='optionC' value='vacation' onClick={handleClick}> <span className='highlight'>Vacations!</span> </Button3>
+      <Button1 data-option='optionA' className='optionA' value='birthday' onClick={handleClick}> <span className='highlight'>My birthday</span> </Button1>
+      <Button2 data-option='optionB' className='optionB' value='payday' onClick={handleClick}> <span className='highlight'>Pay-day</span> </Button2>
+      <Button3 data-option='optionC' className='optionC' value='vacation' onClick={handleClick}> <span className='highlight'>Vacations!</span> </Button3>
     </div>
       
     <div>

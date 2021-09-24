@@ -29,6 +29,10 @@ const Button3 = styled(Button1)`
 function Question2(props) {
   function handleClick(e) {
     e.preventDefault();
+    const answer = {
+      option: e.target.dataset.option
+    }
+    props.handleAnswer(answer)
     props.setGenre(e.target.value);
     console.log('it is also working');
   }
@@ -37,9 +41,9 @@ function Question2(props) {
       <>
       <div>
         <h1>{props.question} </h1>
-        <Button1 className='optionA' value='horror' onClick={handleClick}> <span className='highlight'>Horror/Thrill</span> </Button1>
-        <Button2 className='optionB' value='comedy' onClick={handleClick}> <span className='highlight'>Comedy/Rom-Com</span> </Button2>
-        <Button3 className='optionC' value='tv' onClick={handleClick}> <span className='highlight'>I Prefer Reality-TV</span> </Button3>
+        <Button1 data-option='optionA' className='optionA' value='horror' onClick={handleClick}> <span className='highlight'>Horror/Thrill</span> </Button1>
+        <Button2 data-option='optionB' className='optionB' value='comedy' onClick={handleClick}> <span className='highlight'>Comedy/Rom-Com</span> </Button2>
+        <Button3 data-option='optionC' className='optionC' value='tv' onClick={handleClick}> <span className='highlight'>I Prefer Reality-TV</span> </Button3>
       </div>
 
       <div>

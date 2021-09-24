@@ -29,6 +29,10 @@ const Button3 = styled(Button1)`
 function Question3(props) {
   function handleClick(e) {
     e.preventDefault();
+    const answer = {
+      option: e.target.dataset.option
+    }
+    props.handleAnswer(answer)
     props.setOffDay(e.target.value);
     console.log('it is working as well');
   }
@@ -37,9 +41,9 @@ function Question3(props) {
     <>
     <div>
       <h1>{props.question} </h1>
-      <Button1 className='optionA' value='working' onClick={handleClick}> <span className='highlight'>Catch Up On Work</span> </Button1>
-      <Button2 className='optionB' value='friends' onClick={handleClick}> <span className='highlight'>Hang Out With Family/Friends</span> </Button2>
-      <Button3 className='optionC' value='relaxing' onClick={handleClick}> <span className='highlight'>Me Time!</span> </Button3>
+      <Button1 data-option='optionA' className='optionA' value='working' onClick={handleClick}> <span className='highlight'>Catch Up On Work</span> </Button1>
+      <Button2 data-option='optionB' className='optionB' value='friends' onClick={handleClick}> <span className='highlight'>Hang Out With Family/Friends</span> </Button2>
+      <Button3 data-option='optionC' className='optionC' value='relaxing' onClick={handleClick}> <span className='highlight'>Me Time!</span> </Button3>
     </div>
 
     <div>

@@ -29,6 +29,10 @@ const Button3 = styled(Button1)`
 function Question4(props) {
   function handleClick(e) {
     e.preventDefault();
+    const answer = {
+      option: e.target.dataset.option
+    }
+    props.handleAnswer(answer)
     props.setSleep(e.target.value);
     console.log('it is working too');
   }
@@ -37,9 +41,9 @@ function Question4(props) {
     <>
     <div>
       <h1>{props.question} </h1>
-      <Button1 className='optionA' value='none' onClick={handleClick}> <span className='highlight'>None. I'm a Programmer</span> </Button1>
-      <Button2 className='optionB' value='naps' onClick={handleClick}> <span className='highlight'>I Take Naps Here and There</span> </Button2>
-      <Button3 className='optionC' value='always' onClick={handleClick}> <span className='highlight'>9hrs, No Less.</span> </Button3>
+      <Button1 data-option='optionA' className='optionA' value='none' onClick={handleClick}> <span className='highlight'>None. I'm a Programmer</span> </Button1>
+      <Button2 data-option='optionB' className='optionB' value='naps' onClick={handleClick}> <span className='highlight'>I Take Naps Here and There</span> </Button2>
+      <Button3 data-option='optionC' className='optionC' value='always' onClick={handleClick}> <span className='highlight'>9hrs, No Less.</span> </Button3>
     </div>
         
     <div>
