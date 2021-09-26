@@ -30,6 +30,7 @@ function App() {
     const getQuestion = async () => {
       const res = await axios.get(`${URL}`, config);
       const data = res.data.records[0];
+      console.log(res.data);
       setQuestions(data.fields);
     }
     getQuestion()
@@ -49,13 +50,46 @@ function App() {
         </Link>
       </Route>
 
-      <Route exact path='/question1'> <Question1 question={questions.first} handleAnswer={handleAnswer} timeOfYear={timeOfYear} setTimeOfYear={setTimeOfYear} /> </Route>
-      <Route exact path='/question2'> <Question2 question={questions.second} handleAnswer={handleAnswer} genre={genre} setGenre={setGenre} /> </Route>
-      <Route exact path='/question3'> <Question3 question={questions.third} handleAnswer={handleAnswer} offDay={offDay} setOffDay={setOffDay} /> </Route>
-      <Route exact path='/question4'> <Question4 question={questions.fourth} handleAnswer={handleAnswer} sleep={sleep} setSleep={setSleep} /> </Route>
+      <Route exact path='/question1'>
+        <Question1
+        question={questions.first}
+        handleAnswer={handleAnswer}
+        timeOfYear={timeOfYear}
+        setTimeOfYear={setTimeOfYear} />
+      </Route>
+
+      <Route exact path='/question2'>
+        <Question2
+          question={questions.second}
+          handleAnswer={handleAnswer}
+          genre={genre}
+          setGenre={setGenre} />
+      </Route>
+
+      <Route exact path='/question3'>
+        <Question3
+          question={questions.third}
+          handleAnswer={handleAnswer}
+          offDay={offDay}
+          setOffDay={setOffDay} />
+      </Route>
+
+      <Route exact path='/question4'>
+        <Question4
+          question={questions.fourth}
+          handleAnswer={handleAnswer}
+          sleep={sleep}
+          setSleep={setSleep} />
+      </Route>
       
       <Route exact path='/results'>
-        <ResultsPage answers={answers} handleAnswer={handleAnswer} />
+        <ResultsPage
+          answers={answers}
+          handleAnswer={handleAnswer}
+          timeOfYear={timeOfYear}
+          genre={genre}
+          offDay={offDay}
+          sleep={sleep}/>
       </Route>
     </div>
   );

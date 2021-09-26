@@ -16,13 +16,17 @@ const config = {
 
 function ResultsPage(props) {
   const [accuracy, setAccuracy] = useState('');
-
+  const { timeOfYear, genre, offDay, sleep } = props;
   async function handleSubmit(e) {
     e.preventDefault();
-    const field = {
-      accuracy
+    const fields = {
+      first:timeOfYear,
+      second:genre,
+      third:offDay,
+      fourth:sleep,
+      accuracy:accuracy,
     };
-    await axios.post(`${URL}`, { field }, config);
+    await axios.post(`${URL}`, { fields }, config);
     setAccuracy('')
   }
 
