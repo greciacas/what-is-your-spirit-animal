@@ -29,14 +29,13 @@ const Button3 = styled(Button1)`
 function Question2(props) {
   function handleClick(e) {
     e.preventDefault();
-    e.target.style.borderColor = 'rgb(213, 175, 249)'
+    e.target.style.borderColor = 'rgb(189, 132, 244)'
     e.target.style.borderWidth = '5px'
     const answer = {
       option: e.target.dataset.option
     }
     props.handleAnswer(answer)
     props.setGenre(e.target.value);
-    console.log('it is also working');
   }
 
   return (
