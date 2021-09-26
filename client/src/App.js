@@ -8,7 +8,6 @@ import Question2 from './components/Question2';
 import Question3 from './components/Question3';
 import Question4 from './components/Question4';
 import ResultsPage from './components/ResultsPage';
-import ResultsDetails from './components/ResultsDetails';
 
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -30,8 +29,8 @@ function App() {
   useEffect(() => {
     const getQuestion = async () => {
       const res = await axios.get(`${URL}`, config);
-      const data = res.data.records[1];
-      // console.log(res.data);
+      const data = res.data.records[0];
+      console.log(res.data);
       setQuestions(data.fields);
     }
     getQuestion()
@@ -59,8 +58,6 @@ function App() {
       <Route exact path='/results'>
         <ResultsPage answers={answers} handleAnswer={handleAnswer} />
       </Route>
-
-      <Route exact path='/viewresults'> <ResultsDetails/> </Route>
     </div>
   );
 }

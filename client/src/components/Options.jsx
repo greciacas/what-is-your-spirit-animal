@@ -5,7 +5,7 @@ function Options(props) {
   const optionB = props.answers.filter(question => question.option === 'optionB').length
   const optionC = props.answers.filter(question => question.option === 'optionC').length
 
-  if (optionA >= 3) {
+  if (optionA >= 2) {
     return (
       <div>
         <h1>Crab</h1>
@@ -13,7 +13,7 @@ function Options(props) {
       </div>
     );
   }
-  else if (optionB >= 3) {
+  else if (optionB >= 2) {
     return (
       <div>
         <h1>Cat</h1>
@@ -21,16 +21,13 @@ function Options(props) {
       </div>
     );
   }
-  else if (optionC >= 3) {
+  else if (optionC >= 2) {
     return (
       <div>
       <h1>Bear</h1>
       <img src="https://www.boredpanda.com/blog/wp-content/uploads/2014/03/funny-bears-doing-human-things-20.jpg" alt='bear' width='400' height='300' />
     </div>
     );
-  }
-  else {
-    // return Math.floor(Math.random())
   }
 }
 

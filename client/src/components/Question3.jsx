@@ -11,7 +11,7 @@ const Button1 = styled.button`
     font-family: Times New Roman;
     font-weight: bold;
     padding: 150px 123px;
-    box-shadow: 0px 5px 7px grey;
+    box-shadow: 1px 2px 5px 5px lightgrey;
     cursor: pointer;
     margin: 30px 15px;
   `;
@@ -29,6 +29,8 @@ const Button3 = styled(Button1)`
 function Question3(props) {
   function handleClick(e) {
     e.preventDefault();
+    e.target.style.borderColor = 'rgb(213, 175, 249)'
+    e.target.style.borderWidth = '5px'
     const answer = {
       option: e.target.dataset.option
     }

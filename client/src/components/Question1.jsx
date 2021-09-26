@@ -6,12 +6,11 @@ import image3 from './images/vacation.png';
 
 const Button1 = styled.button`
     background-image: url(${image1});
-    color: black;
     font-size: 20px;
     font-family: Times New Roman;
     font-weight: bold;
     padding: 100px 150px;
-    box-shadow: 0px 5px 7px grey;
+    box-shadow: 1px 2px 5px 5px lightgrey;
     cursor: pointer;
     margin: 30px 20px;
   `;
@@ -27,8 +26,11 @@ const Button3 = styled(Button1)`
 `;
 
 function Question1(props) {
+  
   function handleClick(e) {
     e.preventDefault();
+    e.target.style.borderColor = 'rgb(213, 175, 249)'
+    e.target.style.borderWidth = '5px'
     const answer = {
       option: e.target.dataset.option
     }
@@ -41,14 +43,34 @@ function Question1(props) {
     <>
     <div>
       <h1>{props.question}</h1>
-      <Button1 data-option='optionA' className='optionA' value='birthday' onClick={handleClick}> <span className='highlight'>My birthday</span> </Button1>
-      <Button2 data-option='optionB' className='optionB' value='payday' onClick={handleClick}> <span className='highlight'>Pay-day</span> </Button2>
-      <Button3 data-option='optionC' className='optionC' value='vacation' onClick={handleClick}> <span className='highlight'>Vacations!</span> </Button3>
+        <Button1
+          data-option='optionA'
+          className='optionA'
+          value='birthday'
+          onClick={handleClick}>
+          <span className='highlight'>My birthday</span>
+        </Button1>
+
+        <Button2
+          data-option='optionB'
+          className='optionB'
+          value='payday'
+          onClick={handleClick}>
+          <span className='highlight'>Pay-day</span>
+        </Button2>
+
+        <Button3
+          data-option='optionC'
+          className='optionC'
+          value='vacation'
+          onClick={handleClick}>
+          <span className='highlight'>Vacations!</span>
+        </Button3>
     </div>
       
     <div>
       <Link to='/question2'>
-        <button type='submit'>NEXT</button>
+        <button  type='submit' >NEXT</button>
       </Link>
     </div>
       
