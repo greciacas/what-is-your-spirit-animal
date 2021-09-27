@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     const getQuestion = async () => {
       const res = await axios.get(`${URL}`, config);
-      const data = res.data.records[0];
+      const data = res.data.records[1];
       console.log(res.data);
       setQuestions(data.fields);
     }
