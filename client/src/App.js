@@ -30,6 +30,7 @@ function App() {
     const getQuestion = async () => {
       const res = await axios.get(`${URL}`, config);
       const data = res.data.records[2];
+      console.log(res.data);
       setQuestions(data.fields);
     }
     getQuestion()
