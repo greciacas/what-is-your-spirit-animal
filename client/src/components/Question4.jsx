@@ -6,6 +6,7 @@ import image3 from './images/sleep.png';
 
 const Button1 = styled.button`
     background-image: url(${image1});
+    flex-direction: row;
     color: black;
     font-size: 20px;
     font-family: Times New Roman;
