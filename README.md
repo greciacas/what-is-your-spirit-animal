@@ -44,6 +44,7 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ## Post MVP
 
+- Next and back buttons on the side of the page
 - Adding a star rating
 - Bar graph of results
 
@@ -83,8 +84,16 @@ A game where you'll discover what animal you resemble to the most. The answers t
 
 ### Strengths:
 
+I have a lot of ideas for things I want to create and how I want them to look. I also manage my time wisely.
+
 ### Weaknesses:
+
+I need to do more research on useState to have a better understanding on how state works.
 
 ### Opportunities:
 
+With this project I pushed myself a little more than my previous project, maybe more than what I thought I could handle, but I'm glad that it turned out how I wanted.
+
 ### Threats:
+
+I tend to not ask for help when I need it right away, I can let things pile up which is something I have to work on. This project has helped me see that I focus too much on one problem instead of moving on and coming back to it.
