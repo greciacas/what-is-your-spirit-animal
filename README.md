@@ -1,6 +1,6 @@
 # what's your spirit animal
 
-https://6150c913632cd5a9d410c9b6--serene-jepsen-5e5131.netlify.app/
+https://serene-jepsen-5e5131.netlify.app/
 
 ## Project Description
 
