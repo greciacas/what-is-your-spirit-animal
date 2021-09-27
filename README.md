@@ -80,3 +80,11 @@ A game where you'll discover what animal you resemble to the most. The answers t
 | Total                  |    H     |     40hrs      |    38.5hrs    |   38.5hrs   |
 
 ## SWOT Analysis
+
+### Strengths:
+
+### Weaknesses:
+
+### Opportunities:
+
+### Threats:
