@@ -1,39 +1,28 @@
 import './App.css';
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useState} from 'react';
 import Question1 from './components/Question1';
 import Question2 from './components/Question2';
 import Question3 from './components/Question3';
 import Question4 from './components/Question4';
 import ResultsPage from './components/ResultsPage';
 
-const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
-const URL = `https://api.airtable.com/v0/${airtableBase}/Table%201`
-const config = {
-  headers: {
-    Authorization: `Bearer ${airtableKey}`,
-  },
-}
+// const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
+// const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
+// const URL = `https://api.airtable.com/v0/${airtableBase}/Table%201`
+// const config = {
+//   headers: {
+//     Authorization: `Bearer ${airtableKey}`,
+//   },
+// }
 
 function App() {
-  const [questions, setQuestions] = useState({});
   const [timeOfYear, setTimeOfYear] = useState('');
   const [genre, setGenre] = useState('');
   const [offDay, setOffDay] = useState('')
   const [sleep, setSleep] = useState('');
   const [answers, setAnswers] = useState([]);
-
-  useEffect(() => {
-    const getQuestion = async () => {
-      const res = await axios.get(`${URL}`, config);
-      const data = res.data.records[2];
-      setQuestions(data.fields);
-    }
-    getQuestion()
-  }, []);
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, answer])
@@ -51,7 +40,7 @@ function App() {
 
       <Route exact path='/question1'>
         <Question1
-        question={questions.first}
+        question='Favorite Time of Year?'
         handleAnswer={handleAnswer}
         timeOfYear={timeOfYear}
         setTimeOfYear={setTimeOfYear} />
@@ -59,7 +48,7 @@ function App() {
 
       <Route exact path='/question2'>
         <Question2
-          question={questions.second}
+          question='Preferred movie genre?'
           handleAnswer={handleAnswer}
           genre={genre}
           setGenre={setGenre} />
@@ -67,7 +56,7 @@ function App() {
 
       <Route exact path='/question3'>
         <Question3
-          question={questions.third}
+          question='It is your day-off, how do you spend it?'
           handleAnswer={handleAnswer}
           offDay={offDay}
           setOffDay={setOffDay} />
@@ -75,7 +64,7 @@ function App() {
 
       <Route exact path='/question4'>
         <Question4
-          question={questions.fourth}
+          question='How much sleep do you get?'
           handleAnswer={handleAnswer}
           sleep={sleep}
           setSleep={setSleep} />

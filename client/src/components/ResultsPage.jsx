@@ -1,8 +1,9 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Options from './Options';
 import Form from './Form';
+import ResultsDetails from './ResultsDetails';
 
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
@@ -16,6 +17,7 @@ const config = {
 
 function ResultsPage(props) {
   const [accuracy, setAccuracy] = useState('');
+  const [results, setResults] = useState([]);
   const { timeOfYear, genre, offDay, sleep } = props;
   async function handleSubmit(e) {
     e.preventDefault();
@@ -30,6 +32,16 @@ function ResultsPage(props) {
     setAccuracy('')
   }
 
+  useEffect(() => {
+    const getResults = async () => {
+          const res = await axios.get(`${URL}`, config);
+          const data = res.data.records;
+          // console.log(res.data);
+          setResults(data);
+        }
+        getResults()
+  }, [])
+
   return (
     <div>
       <h2>You're A...</h2>
@@ -38,7 +50,9 @@ function ResultsPage(props) {
         accuracy={accuracy}
         setAccuracy={setAccuracy}
         handleSubmit={handleSubmit} />
-      <h3 onClick={(e)=> e.preventDefault()} ><Link to='/'>Home</Link></h3>
+      <h3 onClick={(e) => e.preventDefault()} ><Link to='/'>Home</Link></h3>
+      {/* <ResultsDetails results={results}/> */}
+      <Link to='/resultsview'>Results Overall</Link>
     </div>
   );
 }
